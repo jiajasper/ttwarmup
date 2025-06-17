@@ -1,0 +1,525 @@
+{
+  "actions": {
+    "like": {
+      "type": "click",
+      "pos": [
+        1394.24609375,
+        567.578125
+      ]
+    },
+    "bookmark": {
+      "type": "click",
+      "pos": [
+        1410.71875,
+        669.578125
+      ]
+    },
+    "follow": {
+      "type": "click",
+      "pos": [
+        1403.6328125,
+        535.2109375
+      ]
+    },
+    "swipe_up": {
+      "type": "scroll",
+      "amount": 500,
+      "direction": "vertical"
+    },
+    "swipe_down": {
+      "type": "scroll",
+      "amount": -500,
+      "direction": "vertical"
+    }
+  },
+  "sequence": [
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "click",
+      "name": "like"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "click",
+      "name": "follow"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "click",
+      "name": "bookmark"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "click",
+      "name": "like"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "click",
+      "name": "like"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "click",
+      "name": "bookmark"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "click",
+      "name": "follow"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "click",
+      "name": "bookmark"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "click",
+      "name": "follow"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "click",
+      "name": "like"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "click",
+      "name": "like"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "click",
+      "name": "like"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "click",
+      "name": "like"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "click",
+      "name": "bookmark"
+    },
+    {
+      "type": "click",
+      "name": "bookmark"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "click",
+      "name": "like"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "click",
+      "name": "like"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "click",
+      "name": "like"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "click",
+      "name": "follow"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "click",
+      "name": "follow"
+    },
+    {
+      "type": "click",
+      "name": "like"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "click",
+      "name": "like"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "click",
+      "name": "like"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "click",
+      "name": "like"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "click",
+      "name": "like"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    }
+  ],
+  "settings": {
+    "random_order": true,
+    "random_delay": true,
+    "delay_range": [
+      1,
+      5
+    ]
+  }
+}
