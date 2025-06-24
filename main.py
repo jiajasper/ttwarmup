@@ -14,6 +14,18 @@ from pynput import mouse, keyboard
 from PIL import Image, ImageDraw
 from PIL.ImageQt import ImageQt
 
+# --- Accessibility permission check for macOS ---
+def check_accessibility_permission():
+    import platform
+    if platform.system() != "Darwin":
+        return True  # Only check on macOS
+    try:
+        current_pos = pyautogui.position()
+        pyautogui.moveTo(current_pos[0], current_pos[1], duration=0.1)
+        return True
+    except Exception:
+        return False
+
 class CountdownLabel(QLabel):
     """A custom label for displaying a countdown on the cursor."""
     def __init__(self, parent=None):
@@ -336,15 +348,26 @@ class SkeuomorphicWindow(QMainWindow):
         self.stop_button.setEnabled(not enabled)
 
     def generate_sequence(self):
-        # This is a simplified generator for brevity
+        # Weighted random sequence generator
         actions = [a for a, d in self.config["actions"].items() if d is not None]
         if len(actions) < 5:
             QMessageBox.warning(self, "Missing Actions", "Please record all actions first.")
             return
-        
+
+        # Define weights for each action
+        weights_map = {
+            "swipe_down": 10,   
+            "swipe_up": 80,    
+            "like": 5,
+            "bookmark": 3,
+            "follow": 2
+        }
+        # Only include actions that are recorded
+        weights = [weights_map.get(a, 1) for a in actions]
+
         seq = []
         for _ in range(100):
-            action_name = random.choice(actions)
+            action_name = random.choices(actions, weights=weights, k=1)[0]
             action_type = self.config["actions"][action_name]["type"]
             seq.append({"type": action_type, "name": action_name})
 
@@ -477,6 +500,19 @@ class SkeuomorphicWindow(QMainWindow):
         self.stop_button.setVisible(True)
 
 if __name__ == "__main__":
+    # Check for Accessibility permission on macOS
+    if not check_accessibility_permission():
+        from PyQt6.QtWidgets import QApplication, QMessageBox
+        import subprocess
+        app = QApplication(sys.argv)
+        QMessageBox.critical(
+            None,
+            "Accessibility Permission Required",
+            "Please grant Accessibility permissions to your Terminal or Python app in System Settings > Privacy & Security > Accessibility.\n\nThe Accessibility settings will now open. After granting permission, restart the app."
+        )
+        # Open Accessibility settings
+        subprocess.run(["open", "x-apple.systempreferences:com.apple.preference.security?Privacy_Accessibility"])
+        sys.exit(1)
     app = QApplication(sys.argv)
     window = SkeuomorphicWindow()
     window.show()

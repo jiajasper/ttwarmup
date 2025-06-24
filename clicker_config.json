@@ -3,22 +3,22 @@
     "like": {
       "type": "click",
       "pos": [
-        1703,
-        494
+        1348,
+        261
       ]
     },
     "bookmark": {
       "type": "click",
       "pos": [
-        1553,
-        939
+        1178,
+        461
       ]
     },
     "follow": {
       "type": "click",
       "pos": [
-        1493,
-        1068
+        137,
+        126
       ]
     },
     "swipe_up": {
@@ -32,224 +32,8 @@
   },
   "sequence": [
     {
-      "type": "click",
-      "name": "bookmark"
-    },
-    {
-      "type": "click",
-      "name": "bookmark"
-    },
-    {
-      "type": "click",
-      "name": "like"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "click",
-      "name": "like"
-    },
-    {
-      "type": "click",
-      "name": "bookmark"
-    },
-    {
-      "type": "click",
-      "name": "like"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "click",
-      "name": "follow"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
       "type": "scroll",
       "name": "swipe_down"
-    },
-    {
-      "type": "click",
-      "name": "like"
-    },
-    {
-      "type": "click",
-      "name": "follow"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "click",
-      "name": "bookmark"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "click",
-      "name": "bookmark"
-    },
-    {
-      "type": "click",
-      "name": "follow"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "click",
-      "name": "bookmark"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "click",
-      "name": "follow"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "click",
-      "name": "follow"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "click",
-      "name": "bookmark"
-    },
-    {
-      "type": "click",
-      "name": "bookmark"
-    },
-    {
-      "type": "click",
-      "name": "follow"
-    },
-    {
-      "type": "click",
-      "name": "follow"
-    },
-    {
-      "type": "click",
-      "name": "bookmark"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "click",
-      "name": "bookmark"
-    },
-    {
-      "type": "click",
-      "name": "bookmark"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "click",
-      "name": "follow"
-    },
-    {
-      "type": "click",
-      "name": "like"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "click",
-      "name": "like"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "click",
-      "name": "like"
-    },
-    {
-      "type": "click",
-      "name": "bookmark"
-    },
-    {
-      "type": "click",
-      "name": "follow"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "click",
-      "name": "bookmark"
-    },
-    {
-      "type": "click",
-      "name": "like"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "click",
-      "name": "bookmark"
-    },
-    {
-      "type": "click",
-      "name": "follow"
-    },
-    {
-      "type": "click",
-      "name": "like"
-    },
-    {
-      "type": "click",
-      "name": "follow"
-    },
-    {
-      "type": "click",
-      "name": "bookmark"
-    },
-    {
-      "type": "click",
-      "name": "follow"
     },
     {
       "type": "scroll",
@@ -268,80 +52,8 @@
       "name": "swipe_down"
     },
     {
-      "type": "click",
-      "name": "like"
-    },
-    {
-      "type": "click",
-      "name": "like"
-    },
-    {
       "type": "scroll",
       "name": "swipe_up"
-    },
-    {
-      "type": "click",
-      "name": "follow"
-    },
-    {
-      "type": "click",
-      "name": "like"
-    },
-    {
-      "type": "click",
-      "name": "follow"
-    },
-    {
-      "type": "click",
-      "name": "like"
-    },
-    {
-      "type": "click",
-      "name": "bookmark"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "click",
-      "name": "follow"
-    },
-    {
-      "type": "click",
-      "name": "follow"
-    },
-    {
-      "type": "click",
-      "name": "bookmark"
-    },
-    {
-      "type": "click",
-      "name": "follow"
-    },
-    {
-      "type": "click",
-      "name": "follow"
-    },
-    {
-      "type": "click",
-      "name": "bookmark"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "click",
-      "name": "follow"
-    },
-    {
-      "type": "click",
-      "name": "bookmark"
     },
     {
       "type": "scroll",
@@ -352,8 +64,132 @@
       "name": "swipe_down"
     },
     {
-      "type": "click",
-      "name": "bookmark"
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
     },
     {
       "type": "scroll",
@@ -361,23 +197,35 @@
     },
     {
       "type": "click",
-      "name": "bookmark"
+      "name": "like"
     },
     {
-      "type": "click",
-      "name": "bookmark"
+      "type": "scroll",
+      "name": "swipe_up"
     },
     {
-      "type": "click",
-      "name": "follow"
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
     },
     {
       "type": "scroll",
       "name": "swipe_down"
-    },
-    {
-      "type": "click",
-      "name": "like"
     },
     {
       "type": "scroll",
@@ -401,15 +249,83 @@
     },
     {
       "type": "scroll",
-      "name": "swipe_down"
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "click",
+      "name": "bookmark"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
     },
     {
       "type": "click",
       "name": "like"
     },
     {
-      "type": "click",
-      "name": "like"
+      "type": "scroll",
+      "name": "swipe_up"
     },
     {
       "type": "scroll",
@@ -418,6 +334,90 @@
     {
       "type": "scroll",
       "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "click",
+      "name": "bookmark"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "click",
+      "name": "bookmark"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "click",
+      "name": "like"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "click",
+      "name": "bookmark"
     },
     {
       "type": "click",
@@ -425,11 +425,11 @@
     },
     {
       "type": "click",
-      "name": "like"
+      "name": "follow"
     },
     {
-      "type": "scroll",
-      "name": "swipe_up"
+      "type": "click",
+      "name": "bookmark"
     }
   ],
   "settings": {

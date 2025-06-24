@@ -58,6 +58,27 @@ The app will automatically create a `clicker_config.json` file when you first ru
 cp clicker_config_template.json clicker_config.json
 ```
 
+## Granting Accessibility Permission for Cursor Control (macOS)
+
+To allow TT Warmup Auto to control your mouse and keyboard, you **must** grant Accessibility permission to your Terminal app (or the app you use to run TT Warmup Auto) on macOS.
+
+### How to Grant Accessibility Permission
+
+1. **Run TT Warmup Auto at least once** (so your system recognizes it).
+2. Open **System Settings** (or **System Preferences** on older macOS).
+3. Go to **Privacy & Security** > **Accessibility**.
+4. Click the **"+"** button to add an app.
+5. In the dialog, select **Terminal** (or the app you use to run TT Warmup Auto, e.g., iTerm, PyCharm, etc.).
+6. Make sure the checkbox next to Terminal is **checked**.
+7. **Restart Terminal** and re-run TT Warmup Auto.
+
+> **Note:**
+> If you run TT Warmup Auto from a packaged app (not Terminal), add that app instead.
+
+### Why is this needed?
+
+macOS requires explicit user permission for any app to control the mouse or keyboard for security reasons. Without this permission, TT Warmup Auto cannot automate actions.
+
 ## How to Launch the App
 
 ### On macOS/Linux
