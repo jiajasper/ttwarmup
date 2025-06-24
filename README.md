@@ -53,6 +53,12 @@ pip install -r requirements.txt
 ```
 Or just use the provided launcher (see below) and it will auto-install dependencies for you!
 
+### 4. Initial Setup
+The app will automatically create a `clicker_config.json` file when you first run it. If you want to start fresh, you can copy the template:
+```
+cp clicker_config_template.json clicker_config.json
+```
+
 ## How to Launch the App
 
 ### On macOS/Linux
@@ -97,6 +103,7 @@ python main.py
 ## Customization
 - You can edit `requirements.txt` to add or update dependencies.
 - The app saves its configuration in `clicker_config.json` in the same folder.
+- Use `clicker_config_template.json` as a starting point for a fresh configuration.
 
 ## Troubleshooting
 - If you see errors about missing modules, make sure Python and pip are installed and on your PATH.
