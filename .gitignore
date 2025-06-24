@@ -1,0 +1,7 @@
+main.py
+clicker_config.json
+package-lock.json
+package.json
+requirements.txt
+.env
+.DS_Store

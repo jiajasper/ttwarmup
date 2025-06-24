@@ -1,60 +1,106 @@
-# macOS Auto Clicker
+# TT Warmup Auto
 
-A powerful automation tool for macOS that allows you to record and replay mouse clicks and swipes with randomized timing and order.
+A very simple automation tool for recording and replaying mouse actions. Works on macOS, Windows, and Linux.
 
 ## Features
 
-- Record and name mouse clicks and swipes
-- Build sequences of actions
-- Randomize action order per loop
-- Random delay between actions (1-5 seconds)
-- Save and load configurations
-- Global ESC hotkey to stop automation
-- Simple and intuitive GUI
+- Record mouse positions for Like, Bookmark, and Follow actions (no click needed, just move the cursor!)
+- Build and randomize sequences of actions
+- Adjustable random delay between actions
+- Glassmorphic, modern UI with clear status and sequence highlighting
+- On-cursor countdown for easy recording
+- Cross-platform launchers for easy use (no Python knowledge required)
+- ESC or Stop button to halt automation at any time
 
-## Installation
+## TikTok Warmup Use Case
 
-1. Install Python 3.10 or higher if you haven't already
-2. Install required packages:
-   ```bash
-   pip install pyautogui keyboard
-   ```
-3. Enable accessibility permissions:
-   - Open System Settings
-   - Go to Privacy & Security > Accessibility
-   - Click the lock icon to make changes
-   - Add Terminal or Python to the list of allowed apps
+This tool is perfect for automating engagement actions (like, bookmark, follow) on TikTok, especially for warmup or botting scenarios. Here's how to use it for TikTok:
 
-## Usage
+1. **Start Screen Mirroring or Open TikTok Web**
+   - If you're using an iPhone, start a screen mirroring session to your computer (e.g., using QuickTime or a mirroring app).
+   - Or, simply open TikTok in your web browser.
 
-1. Run the script:
-   ```bash
-   python main.py
-   ```
+2. **Launch TT Warmup Auto**
+   - Start the app using the launcher or from the terminal.
 
-2. Using the GUI:
-   - Click "Record Click" to save a mouse position
-   - Click "Record Swipe" to save a swipe gesture
-   - Add recorded actions to your sequence
-   - Click "Start" to begin automation
-   - Press ESC at any time to stop
+3. **Record Mouse Locations**
+   - For each action (Like, Bookmark, Follow), click the corresponding "Record Mouse Click Location" button.
+   - Move your mouse to the correct button on the mirrored TikTok screen or web page before the countdown ends. No need to click!
+   - The app will save the coordinates for each action.
 
-3. Configuration:
-   - All settings are saved in `clicker_config.json`
-   - The file is automatically created and updated
+4. **Swipe Up/Down**
+   - You do NOT need to configure swipe up or down. The tool is focused on engagement actions only.
 
-## Requirements
+5. **Edit Action Weights (Advanced)**
+   - If you want to change how often each action appears in the generated sequence, you can edit the weights in the code (look for the `generate_sequence` method in `main.py`).
 
-- macOS
-- Python 3.10+
-- pyautogui
-- keyboard
-- tkinter (built-in)
+## Installation & Setup
 
-## Security Note
+### 1. Requirements
+- Python 3.8+
+- pip (Python package manager)
 
-The keyboard module requires sudo privileges on macOS. This is necessary for the ESC hotkey functionality to work properly.
+### 2. Download/Clone the Repository
+```
+git clone https://github.com/yourusername/ttwarmup.git
+cd ttwarmup
+```
+
+### 3. Install Dependencies
+You can do this manually:
+```
+pip install -r requirements.txt
+```
+Or just use the provided launcher (see below) and it will auto-install dependencies for you!
+
+## How to Launch the App
+
+### On macOS/Linux
+1. Double-click `Launch_TT_Warmup.command` in Finder or your file manager.
+2. The first time, it will install dependencies, then launch the app.
+3. The app will open in a Terminal window.
+
+### On Windows
+1. Double-click `Launch_TT_Warmup.bat` in File Explorer.
+2. The first time, it will install dependencies, then launch the app.
+3. The app will open in a Command Prompt window.
+
+### For Developers: Run from Terminal
+If you prefer to run the app directly from the command line (no launcher needed):
+
+```
+pip install -r requirements.txt
+python main.py
+```
+
+- On Windows, you can use `python main.py`.
+- On macOS/Linux, you can use `python3 main.py` if needed.
+
+## How to Use
+
+1. **Record Actions:**
+   - Click a "Record Mouse Click Location" button for Like, Bookmark, or Follow.
+   - Move your mouse to the target location before the countdown ends. No need to click!
+   - The app will capture the cursor position automatically.
+
+2. **Generate Sequence:**
+   - Click "Generate Sequence" to create a randomized sequence of your actions.
+
+3. **Start Automation:**
+   - Click "Start". The UI will focus on the sequence and show only the Stop button.
+   - The app will perform the actions in your sequence, with random delays.
+   - The current step is highlighted in the sequence list.
+
+4. **Stop Automation:**
+   - Click the red "Stop" button or press ESC at any time to halt automation.
+
+## Customization
+- You can edit `requirements.txt` to add or update dependencies.
+- The app saves its configuration in `clicker_config.json` in the same folder.
+
+## Troubleshooting
+- If you see errors about missing modules, make sure Python and pip are installed and on your PATH.
+- If you have issues with permissions, try running the launcher as administrator (Windows) or with `chmod +x` (macOS/Linux).
 
 ## License
-
 MIT License 

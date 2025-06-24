@@ -3,71 +3,41 @@
     "like": {
       "type": "click",
       "pos": [
-        1394.24609375,
-        567.578125
+        1703,
+        494
       ]
     },
     "bookmark": {
       "type": "click",
       "pos": [
-        1410.71875,
-        669.578125
+        1553,
+        939
       ]
     },
     "follow": {
       "type": "click",
       "pos": [
-        1403.6328125,
-        535.2109375
+        1493,
+        1068
       ]
     },
     "swipe_up": {
       "type": "scroll",
-      "amount": 500,
-      "direction": "vertical"
+      "amount": -200000
     },
     "swipe_down": {
       "type": "scroll",
-      "amount": -500,
-      "direction": "vertical"
+      "amount": 200000
     }
   },
   "sequence": [
     {
-      "type": "scroll",
-      "name": "swipe_down"
+      "type": "click",
+      "name": "bookmark"
     },
     {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
+      "type": "click",
+      "name": "bookmark"
     },
     {
       "type": "click",
@@ -75,95 +45,27 @@
     },
     {
       "type": "scroll",
-      "name": "swipe_down"
+      "name": "swipe_up"
+    },
+    {
+      "type": "click",
+      "name": "like"
+    },
+    {
+      "type": "click",
+      "name": "bookmark"
+    },
+    {
+      "type": "click",
+      "name": "like"
     },
     {
       "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
+      "name": "swipe_up"
     },
     {
       "type": "click",
       "name": "follow"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "click",
-      "name": "bookmark"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "click",
-      "name": "like"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "click",
-      "name": "like"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "click",
-      "name": "bookmark"
     },
     {
       "type": "scroll",
@@ -174,8 +76,8 @@
       "name": "swipe_down"
     },
     {
-      "type": "scroll",
-      "name": "swipe_down"
+      "type": "click",
+      "name": "like"
     },
     {
       "type": "click",
@@ -183,15 +85,7 @@
     },
     {
       "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
+      "name": "swipe_up"
     },
     {
       "type": "click",
@@ -203,6 +97,26 @@
     },
     {
       "type": "click",
+      "name": "bookmark"
+    },
+    {
+      "type": "click",
+      "name": "follow"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "click",
+      "name": "bookmark"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "click",
       "name": "follow"
     },
     {
@@ -210,116 +124,32 @@
       "name": "swipe_down"
     },
     {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
+      "type": "click",
+      "name": "follow"
     },
     {
       "type": "scroll",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
+      "type": "click",
+      "name": "bookmark"
     },
     {
       "type": "click",
-      "name": "like"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
+      "name": "bookmark"
     },
     {
       "type": "click",
-      "name": "like"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
+      "name": "follow"
     },
     {
       "type": "click",
-      "name": "like"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
+      "name": "follow"
     },
     {
       "type": "click",
-      "name": "like"
+      "name": "bookmark"
     },
     {
       "type": "scroll",
@@ -335,87 +165,7 @@
     },
     {
       "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
       "name": "swipe_up"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "click",
-      "name": "like"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "click",
-      "name": "like"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "click",
-      "name": "like"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "click",
-      "name": "follow"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
     },
     {
       "type": "click",
@@ -430,10 +180,6 @@
       "name": "swipe_down"
     },
     {
-      "type": "click",
-      "name": "like"
-    },
-    {
       "type": "scroll",
       "name": "swipe_down"
     },
@@ -443,63 +189,23 @@
     },
     {
       "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
+      "name": "swipe_up"
     },
     {
       "type": "click",
       "name": "like"
     },
     {
-      "type": "scroll",
-      "name": "swipe_down"
+      "type": "click",
+      "name": "bookmark"
     },
     {
       "type": "click",
-      "name": "like"
+      "name": "follow"
     },
     {
       "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
+      "name": "swipe_up"
     },
     {
       "type": "scroll",
@@ -510,8 +216,220 @@
       "name": "swipe_up"
     },
     {
+      "type": "click",
+      "name": "bookmark"
+    },
+    {
+      "type": "click",
+      "name": "like"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "click",
+      "name": "bookmark"
+    },
+    {
+      "type": "click",
+      "name": "follow"
+    },
+    {
+      "type": "click",
+      "name": "like"
+    },
+    {
+      "type": "click",
+      "name": "follow"
+    },
+    {
+      "type": "click",
+      "name": "bookmark"
+    },
+    {
+      "type": "click",
+      "name": "follow"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
       "type": "scroll",
       "name": "swipe_down"
+    },
+    {
+      "type": "click",
+      "name": "like"
+    },
+    {
+      "type": "click",
+      "name": "like"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "click",
+      "name": "follow"
+    },
+    {
+      "type": "click",
+      "name": "like"
+    },
+    {
+      "type": "click",
+      "name": "follow"
+    },
+    {
+      "type": "click",
+      "name": "like"
+    },
+    {
+      "type": "click",
+      "name": "bookmark"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "click",
+      "name": "follow"
+    },
+    {
+      "type": "click",
+      "name": "follow"
+    },
+    {
+      "type": "click",
+      "name": "bookmark"
+    },
+    {
+      "type": "click",
+      "name": "follow"
+    },
+    {
+      "type": "click",
+      "name": "follow"
+    },
+    {
+      "type": "click",
+      "name": "bookmark"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "click",
+      "name": "follow"
+    },
+    {
+      "type": "click",
+      "name": "bookmark"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "click",
+      "name": "bookmark"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "click",
+      "name": "bookmark"
+    },
+    {
+      "type": "click",
+      "name": "bookmark"
+    },
+    {
+      "type": "click",
+      "name": "follow"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "click",
+      "name": "like"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "click",
+      "name": "like"
+    },
+    {
+      "type": "click",
+      "name": "like"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_down"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
+    },
+    {
+      "type": "click",
+      "name": "follow"
+    },
+    {
+      "type": "click",
+      "name": "like"
+    },
+    {
+      "type": "scroll",
+      "name": "swipe_up"
     }
   ],
   "settings": {
