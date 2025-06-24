@@ -323,7 +323,7 @@ class SkeuomorphicWindow(QMainWindow):
                 "swipe_up": {"type": "swipe", "distance": -2000, "duration": 0.2},
                 "swipe_down": {"type": "swipe", "distance": 2000, "duration": 0.2}},
             "sequence": [],
-            "settings": {"random_order": True, "random_delay": True, "delay_range": [1, 5]}
+            "settings": {"random_delay": True, "delay_range": [1, 5]}
         }
         if and_save: self.save_config(config)
         return config
@@ -367,17 +367,17 @@ class SkeuomorphicWindow(QMainWindow):
 
         # Define weights for each action
         weights_map = {
-            "swipe_down": 10,   
-            "swipe_up": 80,    
-            "like": 5,
-            "bookmark": 3,
-            "follow": 2
+            "swipe_down": 5,   
+            "swipe_up": 70,    
+            "like": 10,
+            "bookmark": 5,
+            "follow": 10
         }
         # Only include actions that are recorded
         weights = [weights_map.get(a, 1) for a in actions]
 
         seq = []
-        for _ in range(100):
+        for _ in range(400):
             action_name = random.choices(actions, weights=weights, k=1)[0]
             action_type = self.config["actions"][action_name]["type"]
             seq.append({"type": action_type, "name": action_name})
@@ -432,22 +432,16 @@ class SkeuomorphicWindow(QMainWindow):
             self.signals.update_status.emit(f"Starting in {i}...")
             time.sleep(1)
         
-        original_sequence = self.config["sequence"].copy()
+        sequence = self.config["sequence"].copy()
         
         while self.is_running and not self.esc_pressed:
-            # Create sequence with original indices for tracking
-            sequence_with_indices = [(i, action) for i, action in enumerate(original_sequence)]
-            
-            if self.config["settings"]["random_order"]:
-                random.shuffle(sequence_with_indices)
-            
-            for original_idx, action in sequence_with_indices:
+            for idx, action in enumerate(sequence):
                 if not self.is_running or self.esc_pressed: break
                 name = action['name'].replace('_', ' ').title()
                 self.signals.update_status.emit(f"Executing: {name}")
                 
-                # Highlight using the original index
-                self.signals.highlight_sequence_step.emit(original_idx)
+                # Highlight using the index from the sequence
+                self.signals.highlight_sequence_step.emit(idx)
                 self.execute_action(action)
                 delay = random.uniform(*self.config["settings"]["delay_range"])
                 start_time = time.time()
