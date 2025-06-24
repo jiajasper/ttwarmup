@@ -7,10 +7,9 @@ A very simple automation tool for recording and replaying mouse actions. Works o
 - Record mouse positions for Like, Bookmark, and Follow actions (no click needed, just move the cursor!)
 - Build and randomize sequences of actions
 - Adjustable random delay between actions
-- Glassmorphic, modern UI with clear status and sequence highlighting
 - On-cursor countdown for easy recording
 - Cross-platform launchers for easy use (no Python knowledge required)
-- ESC or Stop button to halt automation at any time
+- Stop button to halt automation at any time
 
 ## TikTok Warmup Use Case
 
