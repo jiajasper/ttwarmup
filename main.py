@@ -11,6 +11,7 @@ from PyQt6.QtCore import Qt, QObject, pyqtSignal, QTimer
 import numpy as np
 import pyautogui
 from pynput import mouse, keyboard
+from pynput.mouse import Button, Controller as MouseController
 from PIL import Image, ImageDraw
 from PIL.ImageQt import ImageQt
 
@@ -75,6 +76,7 @@ class SkeuomorphicWindow(QMainWindow):
         self.esc_pressed = False
         self.recording_action = None
         self.countdown_label = None # For the on-cursor countdown
+        self.mouse_controller = MouseController()
         
         # Setup keyboard listener for stopping automation
         self.keyboard_listener = keyboard.Listener(on_press=self.on_press, daemon=True)
@@ -318,8 +320,8 @@ class SkeuomorphicWindow(QMainWindow):
     def get_default_config(self, and_save=False) -> dict:
         config = {
             "actions": {"like": None, "bookmark": None, "follow": None,
-                "swipe_up": {"type": "scroll", "amount": -200000},
-                "swipe_down": {"type": "scroll", "amount": 200000}},
+                "swipe_up": {"type": "swipe", "distance": -2000, "duration": 0.2},
+                "swipe_down": {"type": "swipe", "distance": 2000, "duration": 0.2}},
             "sequence": [],
             "settings": {"random_order": True, "random_delay": True, "delay_range": [1, 5]}
         }
@@ -348,6 +350,15 @@ class SkeuomorphicWindow(QMainWindow):
         self.stop_button.setEnabled(not enabled)
 
     def generate_sequence(self):
+        # Update swipe parameters from default config before generating sequence
+        default_config = self.get_default_config()
+        
+        # Update swipe_up and swipe_down with latest parameters from main.py
+        if "swipe_up" in default_config["actions"]:
+            self.config["actions"]["swipe_up"] = default_config["actions"]["swipe_up"]
+        if "swipe_down" in default_config["actions"]:
+            self.config["actions"]["swipe_down"] = default_config["actions"]["swipe_down"]
+        
         # Weighted random sequence generator
         actions = [a for a, d in self.config["actions"].items() if d is not None]
         if len(actions) < 5:
@@ -374,7 +385,7 @@ class SkeuomorphicWindow(QMainWindow):
         self.config["sequence"] = seq
         self.save_config()
         self.update_sequence_list()
-        QMessageBox.information(self, "Success", f"Generated sequence with {len(seq)} steps!")
+        QMessageBox.information(self, "Success", f"Generated sequence with {len(seq)} steps! Updated swipe parameters.")
 
     def update_sequence_list(self, highlight_index=None):
         self.sequence_text.clear()
@@ -401,6 +412,19 @@ class SkeuomorphicWindow(QMainWindow):
             pyautogui.click(pos[0], pos[1])
         elif action["type"] == "scroll":
             pyautogui.scroll(action_details["amount"])
+        elif action["type"] == "swipe":
+            # To simulate a continuous trackpad swipe, we send a stream of small scroll events.
+            distance = action_details["distance"] # Total scroll amount (negative for up, positive for down)
+            duration = action_details["duration"] # How long the swipe should take
+
+            # We aim for a smooth gesture, similar to a 60Hz refresh rate.
+            num_steps = max(1, int(duration / 0.05))
+            scroll_per_step = distance / num_steps
+            delay_per_step = duration / num_steps
+
+            for _ in range(num_steps):
+                pyautogui.scroll(int(scroll_per_step))
+                time.sleep(delay_per_step)
 
     def automation_loop(self):
         for i in range(3, 0, -1):
@@ -408,17 +432,22 @@ class SkeuomorphicWindow(QMainWindow):
             self.signals.update_status.emit(f"Starting in {i}...")
             time.sleep(1)
         
-        sequence = self.config["sequence"].copy()
+        original_sequence = self.config["sequence"].copy()
+        
         while self.is_running and not self.esc_pressed:
-            if self.config["settings"]["random_order"]:
-                random.shuffle(sequence)
+            # Create sequence with original indices for tracking
+            sequence_with_indices = [(i, action) for i, action in enumerate(original_sequence)]
             
-            for idx, action in enumerate(sequence):
+            if self.config["settings"]["random_order"]:
+                random.shuffle(sequence_with_indices)
+            
+            for original_idx, action in sequence_with_indices:
                 if not self.is_running or self.esc_pressed: break
                 name = action['name'].replace('_', ' ').title()
                 self.signals.update_status.emit(f"Executing: {name}")
-                # Highlight current step via signal
-                self.signals.highlight_sequence_step.emit(idx)
+                
+                # Highlight using the original index
+                self.signals.highlight_sequence_step.emit(original_idx)
                 self.execute_action(action)
                 delay = random.uniform(*self.config["settings"]["delay_range"])
                 start_time = time.time()

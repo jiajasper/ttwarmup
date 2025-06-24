@@ -3,196 +3,326 @@
     "like": {
       "type": "click",
       "pos": [
-        1348,
-        261
+        1229,
+        463
       ]
     },
     "bookmark": {
       "type": "click",
       "pos": [
-        1178,
-        461
+        1231,
+        565
       ]
     },
     "follow": {
       "type": "click",
       "pos": [
-        137,
-        126
+        1232,
+        430
       ]
     },
     "swipe_up": {
-      "type": "scroll",
-      "amount": -200000
+      "type": "swipe",
+      "distance": -2000,
+      "duration": 0.2
     },
     "swipe_down": {
-      "type": "scroll",
-      "amount": 200000
+      "type": "swipe",
+      "distance": 2000,
+      "duration": 0.2
     }
   },
   "sequence": [
     {
-      "type": "scroll",
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "swipe",
       "name": "swipe_down"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_down"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "click",
+      "name": "bookmark"
+    },
+    {
+      "type": "swipe",
       "name": "swipe_down"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_down"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "swipe",
       "name": "swipe_down"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
+      "name": "swipe_down"
+    },
+    {
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
+      "name": "swipe_down"
+    },
+    {
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
+      "name": "swipe_down"
+    },
+    {
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "swipe",
+      "name": "swipe_down"
+    },
+    {
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "click",
+      "name": "bookmark"
+    },
+    {
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
@@ -200,123 +330,11 @@
       "name": "like"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_down"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "click",
-      "name": "bookmark"
-    },
-    {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
@@ -324,112 +342,96 @@
       "name": "like"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_down"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "click",
-      "name": "bookmark"
+      "type": "swipe",
+      "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_down"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "swipe",
       "name": "swipe_down"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
       "name": "swipe_up"
     },
     {
-      "type": "scroll",
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "swipe",
+      "name": "swipe_up"
+    },
+    {
+      "type": "swipe",
       "name": "swipe_down"
-    },
-    {
-      "type": "click",
-      "name": "bookmark"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "click",
-      "name": "like"
-    },
-    {
-      "type": "scroll",
-      "name": "swipe_up"
-    },
-    {
-      "type": "click",
-      "name": "bookmark"
-    },
-    {
-      "type": "click",
-      "name": "follow"
-    },
-    {
-      "type": "click",
-      "name": "follow"
-    },
-    {
-      "type": "click",
-      "name": "bookmark"
     }
   ],
   "settings": {
